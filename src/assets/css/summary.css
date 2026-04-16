@@ -1,0 +1,62 @@
+.presentation-text {
+  display: grid;
+  /* Cria duas colunas flexíveis que se ajustam sozinhas */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+details {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #eee;
+  height: max-content; /* Impede que o card estique sem necessidade */
+}
+
+details[open] {
+  background: #fdfdfd;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+summary {
+  list-style: none; /* Chrome/Firefox */
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Safari */
+}
+
+summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #7f8c8d;
+  transition: transform 0.4s ease;
+  display: inline-block;
+  line-height: 1;
+}
+
+details[open] summary::after {
+  transform: rotate(45deg); /* O + vira um X */
+  color: #e74c3c; /* Opcional: muda a cor ao abrir */
+}
+
+details p {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+

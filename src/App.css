@@ -1,0 +1,20 @@
+.app-container.loading {
+  opacity: 0;
+  transform: translateY(10px); /* Leve movimento de subida */
+  transition: none;
+}
+
+/* 2. Faz a página surgir suavemente */
+.app-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1s ease-out,
+    transform 1s ease-out;
+}
+
+body {
+  background-color: hsl(0, 0%, 7%); /* Use a cor predominante do seu projeto */
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* --- TEMA ESCURO (PADRÃO) --- */
+:root {
+  /* Cores Principais: Roxo, Cinza e Preto */
+  --bg: hsl(240, 9%, 6%);                /* Preto azulado profundo */
+  --bg-card: hsl(231, 14%, 10%);           /* Cinza escuro para cards */
+  --color-primary: hsl(262, 83%, 58%);     /* Roxo vibrante */
+  --color-secondary: hsl(264, 67%, 35%);   /* Roxo fechado */
+  --text: hsl(218, 11%, 65%);              /* Cinza médio para textos */
+  --text-h: hsl(218, 11%, 90%);            /* Branco acinzentado para títulos */
+  
+  /* Estrutura e Detalhes */
+  --border: hsl(240, 9%, 15%);
+  --code-bg: hsl(240, 9%, 15%);
+  --accent: hsl(262, 83%, 58%);
+  --accent-bg: rgba(192, 132, 252, 0.15);
+  --accent-border: rgba(192, 132, 252, 0.5);
+  --social-bg: rgba(47, 48, 58, 0.5);
+  --shadow: rgba(0, 0, 0, 0.6) 0 10px 15px -3px;
+  
+  --padding: 0.70rem;
+  --border-radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100dvh;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+h1, h2, h3 {
+  color: var(--text-h);
+}

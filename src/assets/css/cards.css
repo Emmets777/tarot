@@ -1,0 +1,153 @@
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.YorN h3,
+.objective h3 {
+  text-align: center;
+  color: #fff; /* Ajustado para seu tema escuro */
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.card {
+  background: hsl(0, 0%, 19%);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin: 15px 0;
+  color: hsl(0, 0%, 90%);
+}
+
+.description p {
+  color: hsl(0, 0%, 71%);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+
+.description #price span {
+  font-weight: bold;
+  color: hsl(130, 93%, 45%);
+}
+
+/* Novos Estilos: Botões e Checkout */
+
+.btn-select {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-select:hover {
+  background: hsl(0, 0%, 80%);
+}
+
+.checkout-area {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 600px;
+  background: hsl(0, 0%, 25%);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #444;
+  animation: slideUp 0.4s ease-out;
+  text-align: center;
+}
+
+.checkout-area h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.checkout-area p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.question-input {
+  background: #1a1a1a;
+  border: 1px solid #444;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+}
+
+.question-input:focus {
+  border-color: hsl(130, 93%, 45%);
+}
+
+.checkout-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-confirm {
+  background: hsl(142, 70%, 49%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: hsl(0, 70%, 49%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
