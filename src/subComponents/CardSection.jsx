@@ -37,6 +37,13 @@ function CardsSection() {
         qty: 6,
         type: "Sim ou Não",
       },
+      {
+        id: "ynC+",
+        title: "Jogo completo +",
+        price: "R$ 26,00",
+        qty: 8,
+        type: "Sim ou Não + 3 perguntas gratuitas",
+      }
     ],
     objective: [
       {
@@ -67,6 +74,13 @@ function CardsSection() {
         qty: 6,
         type: "Objetiva",
       },
+      {
+        id: "objC+",
+        title: "Jogo completo +",
+        price: "R$ 32,00",
+        qty: 8,
+        type: "Objetiva + 3 perguntas gratuitas",
+      }
     ],
   };
 
